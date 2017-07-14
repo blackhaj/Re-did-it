@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+
+  <nav class="navbar navbar-default" id="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" id='logo' href="HOMEPAGE*LINK"><%= image_tag("reddit-logo.png", :alt => "Reddit logo", :size => "27x36") %> </a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" >
+          <li id='logo-text'><a href="#">RE-DID-IT</a></li>
+          <li><a href="#">Front Page <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Subreddits</a></li>
+          <li><a href="#">Users</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    <ul class="nav nav-pills">
+  </nav>
+
+<div class="right-bar">
+<div class="ad"> <%= image_tag("ad.png", :alt => "ad", :size => '280x240') %> </div>
+<div class="new-post-bts">Submit new text post </div>
+<div class="new-post-bts">Submit new link </div>
+
+</div>
+
+
+    <%= yield %>
+  </body>
+</html>

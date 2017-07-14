@@ -1,0 +1,10 @@
+<h1> Here is a list of the comments:</h1>
+<body>
+<% @comments.each do |comment| %>
+    <p> ************************************ </p>
+    <p>Comment: <%= comment.body %></p>
+    <p>Post ID: <%= comment.post_id %></p>
+<p>This comment was created by: <%= User.find(comment.user_id).username %></p>
+<p>On: <%= comment.created_at %></p>
+<%end%>
+</body>

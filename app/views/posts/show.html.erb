@@ -1,0 +1,12 @@
+<h1>Title: <%= @post.title %></h1>
+<body>
+    <% if @post.post_type == 0 %>
+        <p>Body: <%= @post.body %></p>
+    <% else %> 
+        <p>Media: <%= @post.media %></p>
+        <p>URL: <%= @post.url %></p>
+    <% end %> 
+<p>Subreddit: <%= @post.subreddit.title %></p>
+<p>This post was created by: <%= User.find(@post.user_id).username %></p>
+<p>On: <%= @post.created_at %></p>
+</body>

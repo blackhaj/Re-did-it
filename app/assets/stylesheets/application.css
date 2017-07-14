@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* NAVBAR */
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(206, 227, 248);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo-text {
+    text-align: left;
+    padding: 0px 16px 0px 0px;
+    font-weight: bold;
+    font-size: 1.25em;   
+    color: rgb(51,102,153);
+}
+
+#logo {
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* RIGHT BAR  */
+.right-bar {
+    width: 300px;
+    float: right;
+
+}
+
+.right-bar div {
+    margin: 10px;
+}
+
+
+.ad {
+    max-width: 100%;
+    max-height:100%;
+}
+
+.new-post-bts {
+    background: rgb(235,243,252); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(253,254,255), rgb(235,243,252)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(253,254,255), rgb(235,243,252)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(253,254,255), rgb(235,243,252)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(253,254,255), rgb(235,243,252)); /* Standard syntax */
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(196,219,241);
+    text-align: center;
+}
+
+/* POST #INDEX SPECIFIC  */
+#post-index-title {
+    font-weight: semibold;
+    font-size: 1.25em;
+}
+
+/* GENERAL  */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(51,102,153);
+}
+

@@ -1,0 +1,10 @@
+<h1>Subreddit: <%= @subreddit.title %></h1>
+<body>
+    <p>Description: <%= @subreddit.description %></p>
+    <p>Info: <%= @subreddit.sidebar %></p>
+    <p>Theme: <%= @subreddit.theme %></p>
+    <p>Content Options: <%= @subreddit.content_options %></p> 
+    <p>Public or Private: <%= @subreddit.public_private %></p> 
+    <p>This comment was created by: <%= User.find(@subreddit.user_id).username %></p>
+    <p>On: <%= @subreddit.created_at %></p>
+</body>

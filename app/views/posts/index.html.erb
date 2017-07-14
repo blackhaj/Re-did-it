@@ -1,0 +1,16 @@
+<div class="container-fluid">
+
+<div class="post-box">
+    <% @posts.each do |post| %>
+    <div class="row">
+        <div class="col-md-1"><p>Post Karma: <%= post.post_karma %></p></div>
+        <div class="col-md-1"><p> IMAGE </p></div>
+        <div class="col-md-8">
+            <p id="post-index-title"><%= post.title %></p>
+            <p>Submitted <%= ((Time.now - post.created_at ) / 60/60).round %> hours ago by <%= User.find(post.user_id).username %> to r/<%= post.subreddit.title %></p>
+        </div>
+    </div>
+<%end%>
+</div>
+</div>
+
